@@ -1,8 +1,9 @@
 name: 'Close stale issues'
-on:
-  schedule:
-    - cron: '30 12 * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: '30 12 * * *'
+# 
 permissions:
   issues: write
 

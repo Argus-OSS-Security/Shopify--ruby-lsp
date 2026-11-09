@@ -1,13 +1,14 @@
 name: Publish docs
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - 'jekyll/**'
-      - '.github/workflows/publish_docs.yml'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#     paths:
+#       - 'jekyll/**'
+#       - '.github/workflows/publish_docs.yml'
+#   workflow_dispatch:
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

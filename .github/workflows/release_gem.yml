@@ -1,11 +1,12 @@
 name: Release gem on RubyGems.org and create GitHub release
 
-on:
-  push:
-    tags:
-      - v[0-9]+.[0-9]+.[0-9]+
-      - v[0-9]+.[0-9]+.[0-9]+.beta[0-9]*
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - v[0-9]+.[0-9]+.[0-9]+
+#       - v[0-9]+.[0-9]+.[0-9]+.beta[0-9]*
+# 
 jobs:
   release_gem:
     name: Release gem on RubyGems.org

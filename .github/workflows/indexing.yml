@@ -1,15 +1,16 @@
 name: CI (indexing)
 
-on:
-  push:
-    paths:
-      - 'Gemfile.lock'
-      - 'lib/ruby_indexer/**'
-  pull_request:
-    paths:
-      - 'Gemfile.lock'
-      - 'lib/ruby_indexer/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     paths:
+#       - 'Gemfile.lock'
+#       - 'lib/ruby_indexer/**'
+#   pull_request:
+#     paths:
+#       - 'Gemfile.lock'
+#       - 'lib/ruby_indexer/**'
+# 
 jobs:
   indexing_sanity_check:
     runs-on: ubuntu-latest
